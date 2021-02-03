@@ -72,4 +72,4 @@ void taskEnable() {
     }
 }
 ```
-Note that uint32_t equals to unsigned long, uint16_t equals to unsigned int
+Note that **uint32_t** corresponds to **unsigned long**, **uint16_t** corresponds to **unsigned int**
