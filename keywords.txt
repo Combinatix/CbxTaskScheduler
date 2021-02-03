@@ -1,0 +1,11 @@
+CbxTaskScheduler    KEYWORD1
+add                 KEYWORD2
+loop                KEYWORD2
+doTasks             KEYWORD2
+halt                KEYWORD2
+getTaskId           KEYWORD2
+scheduleTask        KEYWORD2
+enabled             KEYWORD2
+depth               KEYWORD2
+softReset           KEYWORD2
+lastRun             KEYWORD2
