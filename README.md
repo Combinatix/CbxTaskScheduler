@@ -26,52 +26,7 @@ uint32_t interval(int id);                             // Returns current task i
 uint32_t lastRun(void procName);                            // Returns system time (in millis) of last run
 uint8_t depth();                                            // Returns current taskDepth*
 ```
-
-Example of use:
-
-```c++
-#include <CbxTaskScheduler.h>
-
-// Create object
-CbxTaskScheduler task;
-
-void setup(){
-    Serial.begin(115200);
-
-    // task.add (procName, interval, optional enabled = true);
-    task.add(task1, 33, false);     // Run task1() every 33ms, disabled by default
-    task.add(task2, 250);           // Run task2() every 250ms
-    task.add(task3, 1000);          // Run task3() every 1000ms
-    task.add(task4, 2000, false);   // Run task4() every 2000ms, disabled by default
-    task.add(taskEnable, 10000);    // Run taskEnable() every 10s
-}
-
-void loop() {
-    task.loop();
-}
-
-// Your procedures:
-
-void task1() {
-    Serial.print("*");
-}
-void task2() {
-    Serial.print("2 ");
-}
-void task3() {
-    Serial.print("3! ");
-}
-void task4() {
-    Serial.print("\nNewLine:  ");
-}
-void taskEnable() {
-    if (task.enabled(task1)) {
-        task.enabled(task1, false);
-        task.enabled(task4, false);
-    } else {
-        task.enabled(task1, true);
-        task.enabled(task4, true);
-    }
-}
-```
 Note that **uint32_t** corresponds to **unsigned long**
+
+### Example of use: see the examples
+

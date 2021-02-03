@@ -2,7 +2,7 @@
 
 	Name:       	CbxTaskScheduler.h
 	Created:		03/05/2020 17:51:22
-	Author:     	Jiri Kosar
+	Author:     	Combinatix
 	Description:	Header file
 
 \*****************************************************************************************************************************/
