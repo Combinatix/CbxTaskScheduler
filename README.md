@@ -5,7 +5,7 @@ List of all methods:
 
 ```cpp
 CbxTaskScheduler task;                              // Constructor
-CbxTaskScheduler task(int pin);                     // Constructor with pin number (pin is LOW, when CPU is Idle, HIGH when CPU is busy)
+CbxTaskScheduler task(int pin);                     // Constructor with pin number (pin is LOW when CPU is Idle, HIGH when CPU is busy)
 
 void add(void procName, uint32_t interval, bool enabled);   // Add task to the task scheduler
 void loop();                                        // Check all tasks, call them if it's time. Call this from main loop as often as possible
