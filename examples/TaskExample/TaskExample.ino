@@ -71,6 +71,7 @@ void taskEnable() {
 }
 
 void reset() {
+    // Perform reset every minute
     task.softReset();
 }
 
